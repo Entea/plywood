@@ -105,7 +105,8 @@ export class PostgresExternal extends SQLExternal {
       let versionString = res[0][key];
       let match: string[];
       if ((match = versionString.match(/^PostgreSQL (\S+) on/))) versionString = match[1];
-      return versionString;
+      // A hack, plywood expects x.y.z version string.
+      return versionString + ".0";
     });
   }
 

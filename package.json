@@ -38,7 +38,9 @@
     "compile": "./compile",
     "pretest": "./compile",
     "test": "./travis-test",
-    "full-test": "./run-tests"
+    "full-test": "./run-tests",
+    "prepack": "./compile",
+    "postinstall": "./compile"
   },
   "tonicExampleFilename": "docs/examples/tonic.js",
   "dependencies": {
