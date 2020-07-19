@@ -40,7 +40,7 @@
     "test": "./travis-test",
     "full-test": "./run-tests",
     "prepack": "./compile",
-    "postinstall": "./compile"
+    "postinstall": "tdi -q"
   },
   "tonicExampleFilename": "docs/examples/tonic.js",
   "dependencies": {
